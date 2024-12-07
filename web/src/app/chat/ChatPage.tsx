@@ -1963,7 +1963,7 @@ export function ChatPage({
                 fixed
                 left-0
                 z-40
-                bg-background-100
+                bg-black
                 h-screen
                 transition-all
                 bg-opacity-80
@@ -2071,7 +2071,7 @@ export function ChatPage({
                                   }
                                 />
 
-                                {!isFetchingChatMessages &&
+                                {/* {!isFetchingChatMessages &&
                                   currentSessionChatState == "input" &&
                                   !loadingError &&
                                   allAssistants.length > 1 && (
@@ -2087,7 +2087,7 @@ export function ChatPage({
                                         onAssistantChange={onAssistantChange}
                                       />
                                     </div>
-                                  )}
+                                  )} */}
                               </div>
                             )}
 

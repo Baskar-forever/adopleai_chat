@@ -49,18 +49,14 @@ export default function LogoType({
       {toggleSidebar && page == "chat" ? (
         <button
           onClick={() => toggleSidebar()}
-          className="pt-[2px] flex  gap-x-2 items-center ml-4 desktop:invisible mb-auto"
+          className="pt-[2px] flex gap-x-2 items-center ml-4 desktop:invisible mb-auto"
         >
           <FiSidebar size={20} className="text-text-mobile-sidebar" />
-          {!showArrow && (
-            <Logo className="desktop:hidden -my-2" height={24} width={24} />
-          )}
         </button>
       ) : (
-        <div className="mr-1 invisible mb-auto h-6 w-6">
-          <Logo height={24} width={24} />
-        </div>
+        <div className="mr-1 invisible mb-auto h-6 w-6"></div>
       )}
+
       <div
         className={`cursor-pointer ${
           showArrow ? "desktop:invisible" : "invisible"
@@ -73,11 +69,11 @@ export default function LogoType({
                 {enterpriseSettings.application_name}
               </HeaderTitle>
               {!NEXT_PUBLIC_DO_NOT_USE_TOGGLE_OFF_DANSWER_POWERED && (
-                <p className="text-xs text-subtle">Powered by Danswer</p>
+                <p className="text-xs text-subtle">Powered by ADOPLE</p>
               )}
             </div>
           ) : (
-            <HeaderTitle backgroundToggled={toggled}>Danswer</HeaderTitle>
+            <HeaderTitle backgroundToggled={toggled}>ADOPLE AI</HeaderTitle>
           )}
         </div>
       </div>
@@ -117,7 +113,7 @@ export default function LogoType({
           <Tooltip>
             <TooltipTrigger asChild>
               <button
-                className="mr-3 my-auto ml-auto"
+                className="mr-3 my-auto ml-auto text-white"
                 onClick={() => {
                   toggleSidebar();
                   if (toggled) {

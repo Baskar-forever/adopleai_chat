@@ -141,11 +141,11 @@ export function ChatSessionDisplay({
                 <p className="break-all overflow-hidden whitespace-nowrap w-full mr-3 relative">
                   {chatName || `Chat ${chatSession.id}`}
                   <span
-                    className={`absolute right-0 top-0 h-full w-8 bg-gradient-to-r from-transparent 
+                    className={`absolute  
                     ${
                       isSelected
                         ? "to-background-chat-selected"
-                        : "group-hover:to-background-chat-hover"
+                        : "group-hover:bg-white text-black"
                     } `}
                   />
                 </p>

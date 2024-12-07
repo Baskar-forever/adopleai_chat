@@ -16,11 +16,11 @@ export function HeaderTitle({
     <h1
       className={`${textSize} ${
         backgroundToggled
-          ? "text-text-sidebar-toggled-header"
-          : "text-text-sidebar-header"
+          ? "text-white"
+          : "text-black"
       } break-words line-clamp-2 ellipsis text-strong leading-none font-bold`}
     >
-      {children}
+      ADOPLE AI
     </h1>
   );
 }

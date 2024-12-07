@@ -93,7 +93,7 @@ export const HistorySidebar = forwardRef<HTMLDivElement, HistorySidebarProps>(
           className={`
             flex
             flex-none
-            bg-background-sidebar
+            bg-black
             w-full
             border-r 
             border-sidebar-border 

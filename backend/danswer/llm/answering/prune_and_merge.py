@@ -102,7 +102,7 @@ def _compute_limit(
         ]
         if lim
     ]
-    return int(min(limit_options))
+    return int(max(limit_options))
 
 
 def reorder_sections(

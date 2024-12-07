@@ -38,22 +38,22 @@ const Main = () => {
       {/* {popup} */}
 
       <p className="mb-2 text-sm text-muted-foreground">
-        Setup Slack bots that connect to Danswer. Once setup, you will be able
-        to ask questions to Danswer directly from Slack. Additionally, you can:
+        Setup Slack bots that connect to adople chat. Once setup, you will be able
+        to ask questions to adople chat directly from Slack. Additionally, you can:
       </p>
 
       <div className="mb-2">
         <ul className="list-disc mt-2 ml-4 text-sm text-muted-foreground">
           <li>
-            Setup DanswerBot to automatically answer questions in certain
+            Setup AdopleBot to automatically answer questions in certain
             channels.
           </li>
           <li>
-            Choose which document sets DanswerBot should answer from, depending
+            Choose which document sets AdopleBot should answer from, depending
             on the channel the question is being asked.
           </li>
           <li>
-            Directly message DanswerBot to search just as you would in the web
+            Directly message AdopleBot to search just as you would in the web
             UI.
           </li>
         </ul>
@@ -61,15 +61,8 @@ const Main = () => {
 
       <p className="mb-6 text-sm text-muted-foreground">
         Follow the{" "}
-        <a
-          className="text-blue-500 hover:underline"
-          href="https://docs.danswer.dev/slack_bot_setup"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          guide{" "}
-        </a>
-        found in the Danswer documentation to get started!
+        guide
+        found in the documentation to get started!
       </p>
 
       <Link

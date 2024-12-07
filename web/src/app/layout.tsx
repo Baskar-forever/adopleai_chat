@@ -31,18 +31,18 @@ const inter = Inter({
 });
 
 export async function generateMetadata(): Promise<Metadata> {
-  let logoLocation = buildClientUrl("/danswer.ico");
+  let logoLocation = buildClientUrl("https://www.adople.com/assets/img/logo/preloader3.png");
   let enterpriseSettings: EnterpriseSettings | null = null;
   if (SERVER_SIDE_ONLY__PAID_ENTERPRISE_FEATURES_ENABLED) {
     enterpriseSettings = await (await fetchEnterpriseSettingsSS()).json();
     logoLocation =
       enterpriseSettings && enterpriseSettings.use_custom_logo
         ? "/api/enterprise-settings/logo"
-        : buildClientUrl("/danswer.ico");
+        : buildClientUrl("https://www.adople.com/assets/img/logo/preloader3.png");
   }
 
   return {
-    title: enterpriseSettings?.application_name ?? "Danswer",
+    title: enterpriseSettings?.application_name ?? "ADOPLE AI",
     description: "Question answering for your documents",
     icons: {
       icon: logoLocation,
@@ -115,14 +115,14 @@ export default async function RootLayout({
     return getPageContent(
       <div className="flex flex-col items-center justify-center min-h-screen">
         <div className="mb-2 flex items-center max-w-[175px]">
-          <HeaderTitle>Danswer</HeaderTitle>
+          <HeaderTitle>ADOPLE AI</HeaderTitle>
           <Logo height={40} width={40} />
         </div>
 
         <CardSection className="max-w-md">
           <h1 className="text-2xl font-bold mb-4 text-error">Error</h1>
           <p className="text-text-500">
-            Your Danswer instance was not configured properly and your settings
+            Your  instance was not configured properly and your settings
             could not be loaded. This could be due to an admin configuration
             issue or an incomplete setup.
           </p>
@@ -130,7 +130,7 @@ export default async function RootLayout({
             If you&apos;re an admin, please check{" "}
             <a
               className="text-link"
-              href="https://docs.danswer.dev/introduction?utm_source=app&utm_medium=error_page&utm_campaign=config_error"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -160,7 +160,7 @@ export default async function RootLayout({
     return getPageContent(
       <div className="flex flex-col items-center justify-center min-h-screen">
         <div className="mb-2 flex items-center max-w-[175px]">
-          <HeaderTitle>Danswer</HeaderTitle>
+          <HeaderTitle>ADOPLE AI</HeaderTitle>
           <Logo height={40} width={40} />
         </div>
         <CardSection className="w-full max-w-md">

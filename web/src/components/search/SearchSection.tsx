@@ -671,7 +671,7 @@ export const SearchSection = ({
             fixed
             left-0 
             z-30
-            bg-background-100 
+            bg-black
             h-screen
             transition-all 
             bg-opacity-80

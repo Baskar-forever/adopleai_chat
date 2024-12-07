@@ -91,14 +91,14 @@ export function PagesTab({
         } rounded-md`}
       >
         {(page == "chat" || page == "search") && (
-          <p className="my-2 text-xs text-sidebar-subtle flex font-bold">
+          <p className="my-2 text-xs text-white flex font-bold">
             {page == "chat" && "Chat "}
             {page == "search" && "Search "}
             History
           </p>
         )}
         {isHistoryEmpty ? (
-          <p className="text-sm mt-2 w-[250px]">
+          <p className="text-sm mt-2 w-[250px] text-white">
             {page === "search"
               ? "Try running a search! Your search history will appear here."
               : "Try sending a message! Your chat history will appear here."}

@@ -102,8 +102,8 @@ export function BasicSelectable({
         ${hasBorder ? "border border-border" : ""}
         ${
           selected
-            ? "bg-background-chat-selected"
-            : "hover:bg-background-chat-hover"
+            ? "bg-white"
+            : "hover:bg-white"
         }
         ${fullWidth ? "w-full" : ""}`}
     >

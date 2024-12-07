@@ -83,9 +83,9 @@ export default function Sidebar() {
 
             <div>
               {enterpriseSettings && enterpriseSettings.application_name ? (
-                <HeaderTitle>{enterpriseSettings.application_name}</HeaderTitle>
+                <HeaderTitle>ADOPLE AI</HeaderTitle>
               ) : (
-                <HeaderTitle>Danswer</HeaderTitle>
+                <HeaderTitle>ADOPLE AI</HeaderTitle>
               )}
             </div>
           </div>

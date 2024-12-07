@@ -50,7 +50,7 @@ export function AdminSidebar({ collections }: { collections: Collection[] }) {
             >
               <div className="max-w-[200px] w-full flex gap-x-1 my-auto">
                 <div className="flex-none mb-auto">
-                  <Logo />
+                  {/* <Logo /> */}
                 </div>
                 <div className="flex-grow min-w-0 my-auto">
                   {enterpriseSettings && enterpriseSettings.application_name ? (
@@ -60,12 +60,12 @@ export function AdminSidebar({ collections }: { collections: Collection[] }) {
                       </HeaderTitle>
                       {!NEXT_PUBLIC_DO_NOT_USE_TOGGLE_OFF_DANSWER_POWERED && (
                         <p className="text-xs text-subtle">
-                          Powered by Danswer
+                          Powered by Adople
                         </p>
                       )}
                     </div>
                   ) : (
-                    <HeaderTitle backgroundToggled={true}>Danswer</HeaderTitle>
+                    <HeaderTitle backgroundToggled={true}>ADOPLE</HeaderTitle>
                   )}
                 </div>
               </div>
@@ -74,12 +74,12 @@ export function AdminSidebar({ collections }: { collections: Collection[] }) {
         </div>
         <div className="flex w-full justify-center">
           <Link href={settings.default_page == "chat" ? "/chat" : "/search"}>
-            <button className="text-sm flex items-center block w-52 py-2.5 flex px-2 text-left text-text-back-button bg-background-back-button hover:bg-opacity-80 cursor-pointer rounded">
+            <button className="text-sm flex items-center block w-52 py-2.5 flex px-2 text-left text-text-back-button bg-white hover:bg-white cursor-pointer rounded">
               <BackIcon className="my-auto" size={18} />
               <p className="ml-1 break-words line-clamp-2 ellipsis leading-none">
                 Back to{" "}
                 {combinedSettings.enterpriseSettings?.application_name ||
-                  "Danswer"}
+                  "chat"}
               </p>
             </button>
           </Link>
@@ -89,13 +89,13 @@ export function AdminSidebar({ collections }: { collections: Collection[] }) {
             className="flex flex-col items-center justify-center w-full"
             key={collectionInd}
           >
-            <h2 className="text-xs text-text-settings-sidebar-strong w-52 font-bold pb-2">
+            <h2 className="text-xs text-white w-52 font-bold pb-2">
               <div>{collection.name}</div>
             </h2>
             {collection.items.map((item) => (
               <Link key={item.link} href={item.link}>
                 <button
-                  className={`text-sm block flex gap-x-2 items-center w-52 py-2.5 px-2 text-left hover:bg-background-settings-hover rounded`}
+                  className={`text-sm text-white block flex gap-x-2 items-center w-52 py-2.5 px-2 text-left hover:bg-blue-600 rounded`}
                 >
                   {item.name}
                   {item.error && (
@@ -116,7 +116,7 @@ export function AdminSidebar({ collections }: { collections: Collection[] }) {
           </div>
         ))}
       </nav>
-      {combinedSettings.webVersion && (
+      {/* {combinedSettings.webVersion && (
         <div
           className="flex flex-col mt-6 items-center justify-center w-full"
           key={"danswerVersion"}
@@ -125,7 +125,7 @@ export function AdminSidebar({ collections }: { collections: Collection[] }) {
             Danswer version: {combinedSettings.webVersion}
           </h2>
         </div>
-      )}
+      )} */}
     </div>
   );
 }

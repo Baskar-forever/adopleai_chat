@@ -189,14 +189,7 @@ export default function CreateCredential({
           {!hideSource && (
             <p className="text-sm">
               Check our
-              <a
-                className="text-blue-600 hover:underline"
-                target="_blank"
-                href={getSourceDocLink(sourceType) || ""}
-              >
-                {" "}
-                docs{" "}
-              </a>
+              docs
               for information on setting up this connector.
             </p>
           )}
